@@ -1,4 +1,13 @@
 def sign(x):
+    """
+    Compute the sign of number.
+    >>> sign(2)
+    1
+    >>> sign(-2)
+    -1
+    >>> sign(0)
+    0
+    """
     if x > 0:
         return 1
     if x < 0:
@@ -7,6 +16,14 @@ def sign(x):
 
 
 def lerp(x, y, t):
+    """ Linearly interpolate between two numbers.
+    >>> lerp(1, 3, 0)
+    1
+    >>> lerp(1, 3, 1)
+    3
+    >>> lerp(1, 3, 0.5)
+    2.0 
+    """
     return (1 - t) * x + t * y
 
 
